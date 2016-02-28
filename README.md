@@ -111,7 +111,7 @@ Es un paquete que contiene dos clases.
 * [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/Log3.java)
 
 #### Log4:
-*Log4 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro. Este es calculado con el método constructor que lanza una excepción si es negativo la cual se gestiona desde el programa principal.
+* Log4 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro. Este es calculado con el método constructor que lanza una excepción si es negativo la cual se gestiona desde el programa principal.
 
 * Controla las excepciones
 
