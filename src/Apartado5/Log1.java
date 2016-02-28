@@ -6,10 +6,10 @@ package Apartado5;
  * <em>Programación de aplicaciones interactivas</em> <br/>
  * Log1 es la clase que ejecuta un programa principal el cual calcula
  * el logaritmo de un número pasado por parámetro.
- * <h4>controla las excepciones<h4/>
- * 	-IllegalArgumentException -> Si se le pasa más de un parámetro.
- *  -ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
- *  -NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
+ * <h4>controla las excepciones</h4>
+ * 	1. llegalArgumentException -> Si se le pasa más de un parámetro.<br/>
+ *  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.<br/>
+ *  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.<br/>
  * <br/>
  * El programa trata básicamente del manejo de excepciones mediante bloques try catch
  * o con la palabra reservada throw.

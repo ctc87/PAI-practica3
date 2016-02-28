@@ -8,11 +8,11 @@ package Apartado5;
  * el logaritmo de un número pasado por parámetro. Este es calculado con
  * el método constructor que lanza una excepción si es negativo la cual 
  * se gestiona desde el programa principal.
- * <h4>controla las excepciones<h4/>
- * 	-IllegalArgumentException -> Si se le pasa más de un parámetro.
- *  -ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
- *  -NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
- *  -WrongParameterException -> Si el número pasado como parámetro es negativo
+ * <h4>controla las excepciones</h4>
+ * 	1. IllegalArgumentException -> Si se le pasa más de un parámetro.<br/>
+ *  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.<br/>
+ *  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.<br/>
+ *  4. WrongParameterException -> Si el número pasado como parámetro es negativo.<br/>
  * <br/>
  * El programa trata básicamente del manejo de excepciones mediante bloques try catch
  * o con la palabra reservada throw.

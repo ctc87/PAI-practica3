@@ -1,69 +1,132 @@
   <img src="./img/java.png" align="left" width="22%">
 
-# Práctica 2 Introducción a la programación en Java
+# Práctica 3 Contenedores y excepciones
 
-## Repositorio PAI-practica2
-El objetivo de esta práctica es Profundizar de forma practica en el conocimiento de Java,
-realizando pequeños programas en este lenguaje..
+## Repositorio PAI-practica3
+Los objetivos de esta práctica son:
+* Familiarizarse con los contenedores mas habituales en Java, as ´ ´ı como con
+iteradores y excepciones.
+
+* Fijar de forma consistente y definitiva el convenio respecto a la forma de codificacion´
+que ha de usarse para los programas que se desarrollan en el ambito de la ´
+asignatura.
 
 
 * author  Carlos Troyano Carmona
 * version 1.1
-* since   2015-02-15
-* [Página del repositorio](http://ctc87.github.io/PAI-practica2/doc/index.html)
+* since   2015-27-16
+* [Página del repositorio](http://ctc87.github.io/PAI-practica3/doc/index.html)
 
-### calculateAge
-Es un paquete que contiene solo una clase.
+### Apartado1
+Es un paquete que contiene dos clases.
 
-#### CalculateAge:
+#### Serpientes:
 
-  CalculateAge CalculateAge es una clase para un ejercicio de una práctica de la asignatura:
-  Programación de aplicaciones interactivas
-  CalculateAge es una clase a la que se le pasan por parámetro una fecha de nacimiento y la fecha actual y calcula la edad de la persona en años meses y días(asumiendo que cada mes tiene 31 días)
-  Lo hace a través de dos vectores en los que almacena la fecha pasada por parámetro en formato: dd/mm/yyyy
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/blob/gh-pages/src/calculateAge/CalculateAge.java)
+* Serpientes es una clase que representa a una serpiente.
 
-### countA
-Es un paQuete que contiene solo una clase.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado1/Serpientes.java)
 
-#### CountA:
-  CalculateAge es una clase a la que se le pasan por parámetro una fecha de nacimiento y la fecha actual y calcula la edad de la persona en años meses y días(asumiendo que cada mes tiene 31 días)
-  Lo hace a través de dos vectores en los que almacena la fecha pasada por parámetro en formato: dd/mm/yyyy
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/blob/gh-pages/src/countA/CountA.java)
+#### App:
 
-### doublePointPrecision
-Es un paquete que contiene solo una clase.
+* App es la clase que ejecuta el programa principal de la clase Serpientes del paquete Apartado1.  La implementación es con un contenedor de tipo ArrayList y recorrido con un for.
 
-#### DoublePointPrecision:
-DoublePointPrecision es una clase que contiene dos números reales y un atributo que dicen si son iguales o no a partir de una constante de precisión.
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/blob/gh-pages/src/doublePointPrecision/DoublePointPrecision.java)
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado1/App.java)
 
+### Apartado2
+  Es un paquete que contiene una clase.
 
-### rational
-Es un paquete que contiene solo una clase.
+#### App:
 
-#### Rational:
-Rational es una ejercicio de una práctica de la asignatura:
-Programación de aplicaciones interactivas
-Rational es una clase que representa los números irracionales con la
+* App es la clase que ejecuta el programa principal de la clase Serpientes del paquete Apartado1.  La implementación es con un contenedor de tipo ArrayList y un iterador de tipo Iterator para recorrerlo.
 
-Se implementan las cuatro operaciones básicas:
-* Suma.
-* Resta.
-* Producto.
-* Cociente.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado2/App.java)
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/tree/gh-pages/src/rational/Rational.java)
+### Apartado3
+  Es un paquete que contiene una clase.
 
-### vectorRange
-Es un paquete que contiene solo dos clases.
+#### App:
 
-#### ReadVectorFile:
-ReadVectorFile es una clase que lee un fichero pasado por parámetro al constructor y con el construye un vector de números reales.
-Contiene un método que devuelve dicho vector.
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/blob/gh-pages/src/vectorRange/ReadVectorFile.java)
+* App es la clase que ejecuta el programa principal de la clase Serpientes del paquete Apartado1. Tomaa la clase Serpiente y la pone en un Mapa, asociando el nombre de la Serpiente como una String (la clave) con cada Serpiente (el valor) que se introduzca en la tabla. Conseguir un iterador para el keySet() y utilizarlo para recorrer el Mapa, buscando la Serpiente para cada clave, imprimiendo la clave y ordenando a la Serpiente reptar().
 
-#### Vector:
-VectorRange es una clase carece de constructor y que solo contiene el programa principal.
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado3/App.java)
 
-* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica2/blob/gh-pages/src/vectorRange/ReadVectorFile.java)
+### Apartado4
+  Es un paquete que contiene dos clases.
+
+  * El Paquete trata básicamente del manejo de excepciones mediante bloques try catch o con la palabra reservada throw.
+
+#### NumOcurrencias:
+* NumOcurrencias es una clase que cuenta el número de ocurrencias de cada palabra dentro de un fichero de texto. El nombre del fichero de texto deberá ser pasado como parámetro en la línea de comandos.
+
+* Las palabras estarán delimitadas por espacios, signos de puntuación ( ´ , ; : . ?), comillas " y paréntesis. Las palabras se contabilizarán sin atender a si están escritas en mayúsculas o minúsculas (la palabra Bueno se considerara igual que buENo).
+
+* No se contabilizará una palabra si su primer carácter no es una letra. Muestre la salida en orden alfabético de palabras con cada palabra precedida por su contador de ocurrencias.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado4/NumOcurrencias.java)
+
+#### App:
+
+* App es la clase que ejecuta el programa principal de la clase NumOcurrencias.java del paquete Apartado4.
+
+* Controla que se reciban parámetros de entrada, crea un objeto de la clase NumOcurrencias con el primer argumento pasado a la función main. Por último muestra el resultado de ejecutar NumOcurrencias sobre el archivo llamando al método apropiado.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado4/App.java)
+
+### Apartado4
+  Es un paquete que contiene cinco clases.
+
+#### Log1:
+* Log1 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro.
+
+* Controla las excepciones:
+
+  1. IllegalArgumentException -> Si se le pasa más de un parámetro.
+  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
+  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/Log1.java)
+
+#### Log2:
+* Log2 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro. Este es calculado con el método constructor que lanza una excepción si es negativo la cual se gestiona desde el programa principal.
+
+* Controla las excepciones:
+
+  1. IllegalArgumentException -> Si se le pasa más de un parámetro.
+  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
+  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
+  4. ArithmeticException -> Si el número pasado como parámetro es negativo.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/Log2.java)
+
+#### Log3:
+* Log3 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro. Este es calculado con el método constructor que lanza una excepción si es negativo la cual se gestiona desde el programa principal.
+
+* Controla las excepciones
+
+  1. IllegalArgumentException -> Si se le pasa más de un parámetro.
+  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
+  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
+  4. WrongParameterException -> Si el número pasado como parámetro es negativo.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/Log3.java)
+
+#### Log4:
+Log4 es la clase que ejecuta un programa principal el cual calcula el logaritmo de un número pasado por parámetro. Este es calculado con el método constructor que lanza una excepción si es negativo la cual se gestiona desde el programa principal.
+
+* Controla las excepciones
+
+  1. IllegalArgumentException -> Si se le pasa más de un parámetro.
+  2. ArrayIndexOutOfBoundsException -> Si no se le pasan parámetros.
+  3. NumberFormatException -> Si se le pasa algo que no sea un número por parámetro.
+  4. WrongParameterException -> Si el número pasado como parámetro es negativo.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/Log4.java)
+
+#### WrongParameterException:
+* WrongParameterException es la clase que crea una excepción de tipo checked hija de la clase Exception.
+
+* Informa sobre un Error en los parámetros, bastante genéricos.
+
+* Admite otra excepción con y un mensaje como constructor.
+
+* [Cabeceras  documentadas](https://github.com/ctc87/PAI-practica3/blob/gh-pages/src/Apartado5/WrongParameterException.java)
